@@ -1,6 +1,13 @@
 import { useState } from "react";
 
-export const Header = ({init, categories, onChange}: {init: string, categories: string[], onChange: (value: string)=>void}) => {
+interface HeaderProps {
+    style?: any, 
+    init: string, 
+    categories: string[], 
+    onChange: (value: string)=>void,
+}
+
+export const Header = ({style, init, categories, onChange = ()=>{}}: HeaderProps) => {
     const [selected, setSelected] = useState<number>(0)
 
     return (
@@ -11,7 +18,6 @@ export const Header = ({init, categories, onChange}: {init: string, categories: 
             borderBottomWidth: "1px", 
             borderBottomColor: "#5f6368", 
             
-            
             display: "flex",
             flexDirection: "row",
             overflowY: "hidden",
@@ -20,6 +26,7 @@ export const Header = ({init, categories, onChange}: {init: string, categories: 
             
             padding: "12px",
             gap: "12px",
+            ...style
         }}>
             {categories.map((item, index)=>{
                 const isActive = index === selected

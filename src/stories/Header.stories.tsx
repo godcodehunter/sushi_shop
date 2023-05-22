@@ -12,5 +12,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {};
+export const Primary: Story = {
+  args: {
+    init: "cat0",
+    categories: ["cat0", "cat1", "cat2"],
+  }
+};
 

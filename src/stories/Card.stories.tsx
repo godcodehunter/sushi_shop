@@ -15,13 +15,7 @@ const CardWithHooks = () => {
     return (
         <Card 
             init={0}
-            onChange={(va: number)=>{
-                if(change === ChangeType.Increase) {
-                    setValue(value + 1)
-                } else {
-                    setValue(value - 1)
-                }
-            }}
+            onChange={(va: number)=>{}}
             img={"test"}
             name={"Name"} 
             composition={["rice", "fish"]}

@@ -14,3 +14,15 @@ body,
 .item-list::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.6);
 }
+
+@font-face {
+  font-family: 'Kashima';
+  src: url('./assets/kashima.ttf') format('truetype');
+}
+
+.main-title {
+  font-family: "Kashima";
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
