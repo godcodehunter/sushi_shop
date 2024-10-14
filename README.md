@@ -10,9 +10,9 @@ You can use it as a template for your bot.
 
 # Develop
 
-First use `yarn install` for installing dependencies. 
-Then for start hot reload session use `yarn start`. 
-For build use `yarn build`. 
+First use `yarn install` for installing dependencies.\
+Then for start hot reload session use `yarn start`.\
+For build use `yarn build`.\
 If you want play with component use `yarn storybook`.
 
 # Installation
