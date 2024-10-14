@@ -71,7 +71,7 @@ export const data:Catalog = [
                 "price": 50,
             },
             {
-                "name": "Salmon with <<Philadelphia>>",
+                "name": "Salmon with Philadelphia",
                 "img": sushiSalmonWithPhilla,
                 "composition": ["salmon", "rice", "cream cheese"],
                 "weight": 33,
@@ -187,7 +187,7 @@ export const data:Catalog = [
             {
                 "name": "Spice Snowy Crabs maki",
                 "img": rollsSpiceSnowCrabs,
-                "composition": ["rice", "<<imitation crab meat>>", "spice sauce", "nori"],
+                "composition": ["rice", "imitation crab meat", "spice sauce", "nori"],
                 "weight": 105,
                 "price": 130,
             },
