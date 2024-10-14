@@ -65,7 +65,7 @@ const Button = ({isActive, children, onClick, itemsInBasket}: ButtonProps) => {
 }
 
 export const Header = ({ style, init, categories, onChange = () => { } }: HeaderProps) => {
-    const [selected, setSelected] = useState<number>(0)
+    const [selected, setSelected] = useState(init)
 
     return (
         <div style={{
@@ -89,11 +89,11 @@ export const Header = ({ style, init, categories, onChange = () => { } }: Header
                 return (
                     <Button 
                         key={index}
-                        isActive = {index === selected}
+                        isActive = {item === selected}
                         itemsInBasket = {3}
                         onClick={() => {
                             onChange(categories[index])
-                            setSelected(index)
+                            setSelected(item)
                         }}
                     >
                         {item}
