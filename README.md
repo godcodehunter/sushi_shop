@@ -20,4 +20,13 @@ If you want play with component use `yarn storybook`.
 
 # Installation
 
-// TODO: ...
+1. First, host your site. For testing purposes, I use [netlify](https://www.netlify.com/).
+2. Create telegram bot.\
+   This is done in a special bot - [botfather](https://t.me/BotFather).\
+   Open botfather, input command `/newbot` end follow instruction.
+3. Now, when we have new bot, let's set `web view`.\
+   Click `/mybots` and select your bot.
+   Now click `Bot Settings`.
+   And next click `Menu button`.
+   So, now just input title and url.
+4. Congratulations, you have added a webview to your bot. 🎉
